@@ -1,2 +1,2 @@
-# ergo-snm-keyboard-firmware-qmk
+# ErgoSNM Keyboard Firmware QMK
 The QMK edition of ErgoSNM keyboard firmware
