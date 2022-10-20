@@ -1,14 +1,18 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "device_side"
+		},
+		{
+			"path": "host_side"
 		}
 	],
 	"settings": {
 		"nrf-connect.topdir": "${nrf-connect.sdk:2.1.0}",
 		"nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.1.0}",
 		"nrf-connect.applications": [
-			"${workspaceFolder}"
+			"${workspaceFolder:device_side}",
+			"${workspaceFolder:host_side}",
 		]
 	}
 }
