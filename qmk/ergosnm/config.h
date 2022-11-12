@@ -20,6 +20,13 @@
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
+#define ENCODERS_PAD_A { D7 }
+#define ENCODERS_PAD_B { E6 }
+#define ENCODERS_PAD_A_RIGHT { D7 }
+#define ENCODERS_PAD_B_RIGHT { E6 }
+#define ENCODER_RESOLUTION 4
+// #define ENCODER_DIRECTION_FLIP
+
 /* Pointing device */
 #define PMW33XX_CS_PIN B6
 #define PMW33XX_CPI 1200 // The CPI range is 100-12000, in increments of 100. Defaults to 1600 CPI.
@@ -30,7 +37,7 @@
 // #define MASTER_RIGHT
 #define SOFT_SERIAL_PIN D0
 #define SPLIT_POINTING_ENABLE
-#define POINTING_DEVICE_RIGHT
+#define POINTING_DEVICE_COMBINED
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE

@@ -58,6 +58,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [0] = { ENCODER_CCW_CW(KC_UP, KC_DOWN), ENCODER_CCW_CW(KC_UP, KC_DOWN)},
+    [1] = { ENCODER_CCW_CW(KC_UP, KC_DOWN), ENCODER_CCW_CW(KC_UP, KC_DOWN)},
+    [2] = { ENCODER_CCW_CW(KC_UP, KC_DOWN), ENCODER_CCW_CW(KC_UP, KC_DOWN)},
+    [3] = { ENCODER_CCW_CW(KC_UP, KC_DOWN), ENCODER_CCW_CW(KC_UP, KC_DOWN)},
+};
+#else
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) { /* 1st encoder */
+        if (clockwise) {
+            tap_code(KC_UP);
+        } else {
+            tap_code(KC_DOWN);
+        }
+    }
+    else if (index == 1) { /* 2nd encoder */
+        if (clockwise) {
+            tap_code(KC_UP);
+        } else {
+            tap_code(KC_DOWN);
+        }
+    }
+
+		return false;
+}
+#endif
+
 void matrix_init_user(void) {
 }
 
@@ -67,6 +95,7 @@ void matrix_scan_user(void) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	return true;
 }
+
 
 void led_set_user(uint8_t usb_led) {
 
