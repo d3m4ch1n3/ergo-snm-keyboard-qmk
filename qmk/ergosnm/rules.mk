@@ -63,5 +63,12 @@ BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
 AUDIO_ENABLE ?= no
 RGBLIGHT_ENABLE ?= no
 
+SPLIT_KEYBOARD = yes
+
 POINTING_DEVICE_ENABLE = yes
 POINTING_DEVICE_DRIVER = pmw3360
+
+ENCODER_ENABLE = yes
+ENCODER_MAP_ENABLE = yes
+
+LTO_ENABLE = no
