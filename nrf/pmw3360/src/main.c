@@ -6,7 +6,8 @@
 
 /* Ref: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/2.1.2/nrf/drivers/pmw3360.html. */
 
-#define ENABLE_INTERRUPT
+/* Uncommented to enable sensor trigger. */
+// #define ENABLE_INTERRUPT
 
 #include <stdio.h>
 #include <zephyr/zephyr.h>
