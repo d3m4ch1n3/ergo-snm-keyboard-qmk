@@ -34,10 +34,11 @@
 #define PMW33XX_CS_PIN B6
 #define PMW33XX_CPI 1200 // The CPI range is 100-12000, in increments of 100. Defaults to 1600 CPI.
 #define POINTING_DEVICE_INVERT_Y
-#define POINTING_DEVICE_COMBINED
+#define POINTING_DEVICE_RIGHT
 
 /* Split keyboard */
-#define MASTER_LEFT
+#define EE_HANDS
+// #define MASTER_LEFT
 // #define MASTER_RIGHT
 #define SOFT_SERIAL_PIN D1
 #define SPLIT_POINTING_ENABLE
