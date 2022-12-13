@@ -1,6 +1,6 @@
 # ErgoSNM Keyboard Firmware QMK
 
-The QMK edition firmware of [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard).
+The [QMK](https://github.com/qmk/qmk_firmware) edition firmware for [ErgoSNM keyboard](https://github.com/ziteh/ergo-snm-keyboard).
 
 ## License
 
