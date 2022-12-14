@@ -71,4 +71,4 @@ POINTING_DEVICE_DRIVER = pmw3360
 ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
-LTO_ENABLE = no
+LTO_ENABLE = no # Link time optimization, enable to reduce the compiled size of firmware.
