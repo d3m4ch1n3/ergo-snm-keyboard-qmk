@@ -2,6 +2,7 @@
 
 #include "quantum.h"
 
+// clang-format off
 #define LAYOUT( \
     LA1, LA2, LA3, LA4, LA5, LA6,                               RA6, RA5, RA4, RA3, RA2, RA1, \
     LB1, LB2, LB3, LB4, LB5, LB6,                               RB6, RB5, RB4, RB3, RB2, RB1, \
@@ -19,5 +20,6 @@
         { RB1, RB2, RB3, RB4, RB5, RB6, RB7 }, \
         { RC1, RC2, RC3, RC4, RC5, RC6, RC7 }, \
         { RD1, RD2, RD3, RD4, RD5, RD6, RD7 }, \
-        { RE1, RE2, RE3, RE4, RE5, RE6, RE7 } \
+        { RE1, RE2, RE3, RE4, RE5, RE6, RE7 }  \
     }
+// clang-format on
